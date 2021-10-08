@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+
+}
+
+.home-grid {
+    margin: 10%;
+    align-content: center;
+}
+
+.logo {
+    text-align: left;
+}
+
