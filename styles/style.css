@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Permanent+Marker&family=Raleway:wght@300&display=swap');
 
+/* Everything with a 2 after the class or id name is for the rivers page*/
+
 body {
     background-color: #2FB8DA;
     font-family: 'Raleway', sans-serif;
@@ -7,6 +9,8 @@ body {
     margin: 0;
     padding: 0;    
 }
+
+/* Header and Hero */
 
 header {
     background-color: rgba(2, 48, 71, 0.5);
@@ -32,13 +36,13 @@ nav {
 }
 
 nav a, a:visited {
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     text-align: center;
     text-decoration: none;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     border-radius: 10px;
-    padding-top: 5px;
+    padding-top: 15px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -52,6 +56,13 @@ nav a:hover {
     color: white;
     font-family: 'Permanent Marker', cursive;
     font-size: 2em;
+    margin-top: 10px;
+}
+
+.home-title2 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
     margin-top: 10px;
 }
 
@@ -93,9 +104,22 @@ h4 {
 
 }
 
+#hero2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -100px; 
+
+}
+
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-box2 {
+    grid-column: 1/4;
+    grid-row: 1/4;
     z-index: -1;
 }
 
@@ -105,7 +129,22 @@ h4 {
     margin-top: 100px;
 }
 
+#hero-msg2 {
+    grid-column: 1/3;
+    grid-row: 2/4;
+    margin-top: 100px;
+}
+
+#diff-font {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1em;
+}
+
 #hero-img {
+    width: 100%;
+}
+
+#hero-img2 {
     width: 100%;
 }
 
@@ -117,10 +156,13 @@ h4 {
     text-align: center;
 }
 
+/* Main section */
+
 main {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
+
 
 main section {
     text-align: center;
@@ -137,6 +179,30 @@ main section img {
     grid-row: 4/9;
 }
 
+#background1 {
+    background-color: #36A1D3;
+    height: 725px;
+    grid-column: 1/11;
+    grid-row: 2/4;
+    margin: 12px;
+}
+
+#background2 {
+    background-color: #36A1D3;
+    height: 725px;
+    grid-column: 1/11;
+    grid-row: 4/6;
+    margin: 12px;
+}
+
+#background3 {
+    background-color: #36A1D3;
+    height: 725px;
+    grid-column: 1/11;
+    grid-row: 6/8;
+    margin: 12px;
+}
+
 .card-img {
     border: 10px solid #023047;
     transition: transform .5s;
@@ -144,6 +210,17 @@ main section img {
 }
 
 .card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.card-img2 {
+    border: 10px solid #023047;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img2:hover {
     opacity: .6;
     transform: scale(1.1);
 }
@@ -166,6 +243,26 @@ main section img {
 .rapids-card {
 grid-column: 8/10;
 grid-row: 2/3;
+}
+
+.title {
+    margin: 15px;
+    grid-column: 1/3;
+}
+
+.rivers-card2 {
+    grid-column: 8/10;
+    grid-row: 2/4;
+}
+
+.camping-card2 {
+    grid-column: 8/10;
+    grid-row: 4/6;
+}
+
+.rapids-card2 {
+    grid-column: 8/10;
+    grid-row: 6/8;
 }
 
 .mountains {
@@ -271,7 +368,11 @@ footer .social a:hover {
         margin: 50px auto;
         width: 60%;
     }
-    #background {
+    .rivers-card2, .camping-card2, .rapids-card2 { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background, #background1, #background2, #background3 {
         display: none;
     }
     .mountains, .msg {
