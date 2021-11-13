@@ -218,6 +218,7 @@ main section img {
     border: 10px solid #023047;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+    
 }
 
 .card-img2:hover {
