@@ -322,6 +322,8 @@ footer .social a:hover {
     font-size: 1em;
     justify-self: start;
     text-align: left;
+    line-height: 1.4;
+    white-space: pre-line
 }
 
 .card-img2 {
@@ -373,6 +375,8 @@ footer .social a:hover {
     font-size: 1em;
     justify-self: start;
     text-align: left;
+    line-height: 1.4;
+    white-space: pre-line
 }
 
 .card-img3 {
@@ -424,6 +428,8 @@ footer .social a:hover {
     font-size: 1em;
     justify-self: start;
     text-align: left;
+    line-height: 1.4;
+    white-space: pre-line
 }
 
 .card-img4 {
