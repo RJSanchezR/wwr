@@ -280,14 +280,13 @@ footer .social a:hover {
 }
 
 .title {
-    grid-column: 4/8;
+    grid-column: 1/11;
     margin: 40px;
     color: white;
     font-family: 'Permanent Marker', cursive;
     font-size: 2em;
     justify-self: center;
     align-self: center;
-
 }
 
 #background1 {
@@ -492,7 +491,7 @@ footer .social a:hover {
         margin: 50px auto;
         width: 60%;
     }
-    #background, #background2, #background3, #background4 {
+    #background, #background1, #background2, #background3, #background4 {
         display: none;
     }
     .mountains, .msg {
