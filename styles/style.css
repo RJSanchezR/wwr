@@ -12,6 +12,10 @@ header {
     background-color: rgba(2, 48, 71, 0.5);
     display: grid;
     grid-template-columns: 150px auto;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
 
 }
 
@@ -37,14 +41,13 @@ nav a, a:visited {
     text-align: center;
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 nav a:hover {
-    color: white;
+    color: #023047;
     background: rgba(255, 204, 51, 0.9);
 }
 
@@ -119,7 +122,8 @@ h4 {
 
 main {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr) auto;
+    margin-top: 30px;
 }
 
 main section {
@@ -218,7 +222,6 @@ footer {
 footer h3 {
     color: white;
 }
-
 footer a {
     color: white;
     text-decoration: none;
@@ -231,7 +234,7 @@ footer a:hover {
 }
 
 footer h3 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 footer .social img {
